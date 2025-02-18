@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Great-food</title>
+    <link rel="stortcut icon " href="https://i.pinimg.com/736x/c4/c9/8a/c4c98a02ddf96fb83b6db6fc3319158e.jpg">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <head>
+        <div class="page-head">
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://png.pngtree.com/thumb_back/fw800/back_our/20190620/ourmid/pngtree-healthy-fruits-and-vegetables-green-leaves-literary-green-banner-image_172881.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item ">
+                    <img src="https://png.pngtree.com/thumb_back/fw800/back_our/20190620/ourmid/pngtree-fresh-and-simple-fruit-and-vegetable-cuisine-banner-image_171536.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://static.vecteezy.com/system/resources/previews/036/804/355/non_2x/ai-generated-assorted-indian-food-on-dark-wooden-background-free-photo.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.shutterstock.com/image-photo/collage-various-food-products-260nw-1114876286.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev"> -->
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <!-- <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next"> -->
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <hr size="2">
+        </div>
+
+        <div class="menu">
+            <div class="page-logo">
+                <div class="logo">
+                    <img src="https://i.pinimg.com/736x/c4/c9/8a/c4c98a02ddf96fb83b6db6fc3319158e.jpg" alt="">
+                </div>
+                <div class="name">
+                    <h2 id="page-name">Great-FooD</h2>
+                </div>
+            </div>
+            <div class="page-menu">
+                <!-- <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="khmer.html">Khmer</a></li>
+                    <li><a href="thai.html">Thai</a></li>
+                    <li><a href="korea.html">Korea</a></li>
+                    <li><a href="vietnam.html">Vietnamese</a></li>
+                    <li><a href="europe.html">Europe</a></li>
+                    <li><a href="health-food.html">Health food</a></li>
+                </ul> -->
+            </div>
+            <div class="page-login">
+                <button type="submit" onclick="Login()"  class="login ">Login</button>
+            </div>
+        </div>
+    </head>
+    <main>
+        <div class="Shadow_box" id="Shadow_box">
+            <div class="login-box" id="login-box">
+                <div class="register">
+                    <div class="overlay">
+                        <div class="overlay-panel ">
+                            <h1>Hello, Friend!</h1>
+                            <p>Enter your personal details</p>
+                            <button class="ghost" id="register" onclick="Register_log()">register</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-container login-in-container">
+                    <form action="#">
+                        <a href="#"><span class="icon" id="icon"><i class="fa-sharp fa-solid fa-xmark" id="icon"></i></span></a>
+                        <h1>Login </h1>
+                        <div class="social-icon">
+                            <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="goo"><i class="fab fa-google-plus-g"></i></a>
+                        </div>
+                        <span>or use your account</span>
+                        <input type="email" placeholder="Email" id="email"/>
+                        <input type="password" placeholder="Password" id="password" />
+                        <a href="#">Forgot your password?</a>
+                        <button type="submit" onclick="BLogin()" >Login </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="register-box" id="register-box">
+                <div class="register">
+                    <div class="overlay">
+                    </div>
+                </div>
+                <div class="form-container login-in-container">
+                    <form action="#">
+                        <a href="#"><span class="icon"><i class="fa-sharp fa-solid fa-xmark" id="wrong"></i></span></a>
+                        <h1>Register</h1>
+                        
+                        <span>Don't have an account?</span>
+                        <input type="text" placeholder="Name" id="name"/>
+                        <input type="email" placeholder="Email" id="email"/>
+                        <input type="password" placeholder="Password" id="password" />
+                        <input type="password" placeholder="Confirm Password" id="password" />
+                        <button type="submit" onclick="Register()" >Register</button>
+                        <span>Already have an account?<a href="#" id="acc_login" style="color:blue">Login</a></span>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section>
+        <div class="search">
+            <div class="search-box">
+                <input type="text" placeholder="Search name of food" class="search-txt">
+                <a href="#">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+            </div>
+        </div>
+        <h5></h5>
+        <div class="title">
+            <h2>The Great Food alway <b>by your side.</b> </h2> 
+            <h3>Famous food from many countries with delicious flavors are here...!</h3>
+        </div>
+        
+        <div class="scroller">
+            <div class="box-scroll">
+                <div class="box-top">
+                    <img src="https://i.pinimg.com/236x/2b/bc/83/2bbc832d30039aec64237de7a319ea14.jpg" alt="">
+                </div>
+                <div class="box-under">
+                    <h1>Papaya salad/បុកល្ហុង  </h1>
+                    <a href="/Great-Food/papaya.html">Click to view ingredient</a>
+                    <h6>Thai recipe</h6>
+                </div>
+            </div>
+            <div class="box-scroll">
+                <div class="box-top">
+                    <img src="https://i.pinimg.com/736x/b5/26/72/b52672ad7cd5e8f8382a0d8d78ebf41b.jpg" alt="">                    
+                </div>
+                <div class="box-under">
+                    <h1>Mango salad/ ញ៉ោមស្វាយ  </h1>
+                    <a href="/Great-Food/Mango-salad.html">Click to view ingredient</a>
+                    <h6>Vietnamese recipe​</h6>
+                </div>
+            </div>
+            <div class="box-scroll">
+                <div class="box-top">
+                    <img src="https://i.pinimg.com/236x/87/38/4a/87384ae90057fc7f1ad80e51a4d58c33.jpg" alt="">
+                </div>
+                <div class="box-under">
+                    <h1>Amok/អាម៉ុក</h1>
+                    <a href="amok.html">Click to view ingredient</a>
+                    <h6>Khmer recipe</h6>
+                </div>
+            </div>
+            <div class="box-scroll">
+                <div class="box-top">
+                    <img src="https://i.pinimg.com/236x/86/ee/fa/86eefa3d34fcc5a1f9b303e517d6e192.jpg" alt="">
+                </div>
+                <div class="box-under">
+                    <h1>Banh Xeo </h1>
+                    <a href="/Great-Food/banh-xeo.html">Click to view ingredient</a>
+                    <h6>Vietnamese/វៀតណាម​</h6>
+                </div>
+            </div>
+            <div class="box-scroll">
+                <div class="box-top">
+                    <img src="https://i.pinimg.com/736x/2b/4a/12/2b4a121f71cbbedfd46eae3e67732f88.jpg" alt="">
+                </div>
+                <div class="box-under">
+                    <h1>Nom Banh chok/នំបញ្ចុក</h1>
+                    <a href="/Great-Food/nom_banhchok.html">Click to view ingredient</a>
+                    <h6>Khmer recipe</h6>
+                </div>
+            </div>
+            <div class="box-scroll">
+                <div class="box-top">
+                    <img src="https://i.pinimg.com/736x/8b/cb/d4/8bcbd4c4168c0085964668eebb185a7e.jpg" alt="">
+                </div>
+                <div class="box-under">
+                    <h1>Ngam Ngov​ / ង៉ាមង៉ូវ</h1>
+                    <a href="nam-ngov.html">Click to view ingredient</a>
+                    <h6>Khmer recipe</h6>
+                </div>
+            </div>
+            <div class="box-scroll">
+                <div class="box-top">
+                    <img src="https://i.pinimg.com/736x/7c/5d/79/7c5d79ffa576789df37869f8f7825094.jpg" alt="">  
+                </div>
+                <div class="box-under">
+                    <h1>Stuffed Bittermelon soup</h1>
+                    <a href="bittermelon-soup.html">Click to view ingredient</a>
+                    <h6>Vietnamese recipe</h6>
+                </div>
+            </div>
+            <div class="box-scroll">
+                <div class="box-top">
+                    <img src="https://i.pinimg.com/736x/06/f2/df/06f2df6ae96b2d92ca49c68b3517d744.jpg" alt="">    
+                </div>
+                <div class="box-under">
+                    <h1>Currywurst</h1>
+                    <a href="Currywurst.html">Click to view ingredient</a>
+                    <h6>Europe recipe</h6>
+                </div>
+            </div>
+            <div class="box-scroll">
+                <div class="box-top">
+                    <img src="https://i.pinimg.com/236x/d5/e6/83/d5e683e45cc175012406472e4c4de896.jpg" alt="">     
+                </div>
+                <div class="box-under">
+                    <h1>Vegan Sundubu Jjigae </h1>
+                    <a href="vegan_sundubu.html">Click to view ingredient</a>
+                    <h6>Korea recipe</h6>
+                </div>
+            </div>
+            <div class="box-scroll">
+                <div class="box-top">
+                    <img src="https://i.pinimg.com/236x/cc/be/2e/ccbe2ef3a4dd5cbdfbfa3246884e92d1.jpg" alt="">   
+                </div>
+                <div class="box-under">
+                    <h1>Thai basil chicken</h1>
+                    <a href="basil_chicken.html">Click to view ingredient</a>
+                    <h6>Thai Recipe</h6>
+                </div>
+            </div>
+            <div class="box-scroll">
+                <div class="box-top">
+                    <img src="https://i.pinimg.com/236x/15/71/73/15717372c52e1e49bd1142d9c00560aa.jpg" alt="">              
+                </div>
+                <div class="box-under">
+                    <h1>Chocolate chip bread </h1>
+                    <a href="chocolate_bread.html">Click to view ingredient</a>
+                    <h6>Europe Recipe</h6>
+                </div>
+            </div>
+        </div>    
+        <!-- flex -->
+        <div class="title-food">
+            <h1>Khmer recipes🥘</h1>
+            <div class="flex-khmer">
+                <div class="box-flex">
+                    <img src="https://i.pinimg.com/736x/2b/4a/12/2b4a121f71cbbedfd46eae3e67732f88.jpg" alt="">
+                    <div class="food-name">
+                       <span>Nom banh chok/នំបញ្ចុក</span>
+                    </div>
+                </div>
+                <div class="box-flex">
+                    <img src="https://i.pinimg.com/736x/16/17/20/1617200b6109b4dc83adb9a279681cf4.jpg" alt="">
+                    <div class="food-name">
+                        <span>Ngam Ngov​ / ង៉ាមង៉ូវ</span>
+                    </div>
+                </div>
+                <div class="box-flex">
+                    <img src="https://i.pinimg.com/236x/d6/fa/df/d6fadff0257cac49882642310f0ffda4.jpg" alt="">
+                    <div class="food-name">
+                        <span>Fried riec/បាយឆា</span>
+                     </div>
+                </div>
+                <div class="box-flex">
+                    <img src="https://i.pinimg.com/474x/8d/ec/70/8dec708e85ec9407418f9e283a4e1fc3.jpg" alt="">
+                    <div class="food-name">
+                        <span>Kuy Teav / គុយទាវ</span>
+                     </div>
+                </div>
+                <div class="box-flex">
+                    <img src="https://i.pinimg.com/736x/55/3b/0c/553b0cdad4655861edf2e2b12762f136.jpg" alt="">
+                    <div class="food-name">
+                        <span>Korko/សម្លរកកូរ</span>
+                     </div>
+                </div>
+                <div class="box-flex">
+                    <img src="https://i.pinimg.com/236x/b3/c9/6d/b3c96dd6c41fb146ab34cdaada021385.jpg" alt="">
+                    <div class="food-name">
+                        <span>Grilled corn/ពោតដុត</span>
+                     </div>
+                </div>
+                <div class="box-flex">
+                    <img src="https://i.pinimg.com/236x/87/38/4a/87384ae90057fc7f1ad80e51a4d58c33.jpg" alt="">
+                    <div class="food-name">
+                        <span>Amok/អាម៉ុក</span>
+                     </div>
+                </div>
+                <div class="box-flex">
+                    <img src="https://i.pinimg.com/736x/4a/2d/04/4a2d040200e498f2083253dee836f5af.jpg" alt="">
+                    <div class="food-name">
+                        <span>Cha Kreung Sarch Moan/ឆាគ្រឿងសាច់​មាន់</span>
+                     </div>
+                </div>
+            </div>
+            <a href="khmer.html"><button type="button" class="khmer" >See more</button></a>
+    
+            <h1>Thai recipes🍛</h1>
+            <div class="flex-khmer">
+                <div class="box-flex">
+                    <img src="https://i.pinimg.com/736x/23/e1/08/23e1087845c9e84053b22ce58e199dfa.jpg" alt="">
+                    <div class="food-name">
+                       <span>Papaya salad/បុកល្ហុង</span>
+                    </div>
+                </div>
+                <div class="box-flex">
+                    <img src="https://i.pinimg.com/236x/cc/be/2e/ccbe2ef3a4dd5cbdfbfa3246884e92d1.jpg" alt="">
+                    <div class="food-name">
+                        <span>Thai basil chicken</span>
+                    </div>
+                </div>
+                <div class="box-flex">
+                    <img src="https://i.pinimg.com/236x/be/d1/8d/bed18d602732f1fce7db66ade7f70293.jpg" alt="">
+                    <div class="food-name">
+                        <span>BBQ pork spare ribs</span>
+                     </div>
+                </div>
+                <div class="box-flex">
+                    <img src="https://i.pinimg.com/474x/9e/b0/ec/9eb0ec5f979bef3e31fcf69609ccded1.jpg" alt="">
+                    <div class="food-name">
+                        <span>Cashew Chicken </span>
+                     </div>
+                </div>
+                <div class="box-flex">
+                    <img src="https://i.pinimg.com/236x/10/c3/d5/10c3d5dd464ffc83b219aa250aae4af1.jpg" alt="">
+                    <div class="food-name">
+                        <span>Thai Glass Noodle Salad</span>
+                     </div>
+                </div>
+                <div class="box-flex">
+                    <img src="https://i.pinimg.com/236x/99/37/fd/9937fd1f9633c6ccd7bff23171d5a781.jpg" alt="">
+                    <div class="food-name">
+                        <span>Spicy Thai beef salad</span>
+                     </div>
+                </div>
+                <div class="box-flex">
+                    <img src="https://i.pinimg.com/736x/5e/ff/b2/5effb2e2009c96e5e440fae2c9f81d7f.jpg" alt="">
+                    <div class="food-name">
+                        <span>Tom Yum Goong Soup (Thai Hot and Sour Shrimp Soup)</span>
+                     </div>
+                </div>
+                <div class="box-flex">
+                    <img src="https://i.pinimg.com/236x/18/dc/91/18dc91e7e472e35cd0af88bdfc5ee824.jpg" alt="">
+                    <div class="food-name">
+                        <span>Coconut curry shrimp</span>
+                     </div>
+                </div>
+            </div>
+            <a href="thai.html"><button type="button" class="khmer" >See more</button></a>
+
+            <h1>Korea/កូរ៉េ 🍝Menu</h1>
+            <div class="flex-khmer">
+                <div class="box-flex">
+                    <img src="https://i.pinimg.com/236x/d5/e6/83/d5e683e45cc175012406472e4c4de896.jpg" alt="">
+                    <div class="food-name">
+                       <span>Vegan Sundubu Jjigae (Korean Soft Tofu Stew)</span>
+                    </div>
+                </div>
+                <div class="box-flex">
+                    <img src="https://i.pinimg.com/236x/1f/18/03/1f1803ffa50cda8575e65fdb9d7992df.jpg" alt="">
+                    <div class="food-name">
+                        <span>Kimchi fried rice</span>
+                    </div>
+                </div>
+                <div class="box-flex">
+                    <img src="https://i.pinimg.com/236x/88/5e/d9/885ed9d3194e58c01b3c2865a943691a.jpg" alt="">
+                    <div class="food-name">
+                        <span>Kimchi</span>
+                     </div>
+                </div>
+                <div class="box-flex">
+                    <img src="https://i.pinimg.com/236x/b4/12/5f/b4125f043f508b0136b143d372fba396.jpg" alt="">
+                    <div class="food-name">
+                        <span> Vegan Budae Jjigae or Korean Army base stew</span>
+                     </div>
+                </div>
+                <div class="box-flex">
+                    <img src="https://i.pinimg.com/236x/00/0d/70/000d703efd2519175b4ee4ef5611fb06.jpg" alt="">
+                    <div class="food-name">
+                        <span>Vegan Tteokbokki</span>
+                     </div>
+                </div>
+                <div class="box-flex">
+                    <img src="https://i.pinimg.com/236x/43/7d/73/437d7330f591a1ebec43f40429e82f37.jpg" alt="">
+                    <div class="food-name">
+                        <span>Korean pork belly kimchi bowls </span>
+                     </div>
+                </div>
+                <div class="box-flex">
+                    <img src="https://i.pinimg.com/236x/00/25/e6/0025e671ee7dfa275f8a6c68d41ad4b9.jpg" alt="">
+                    <div class="food-name">
+                        <span> Saucy ramen noodles</span>
+                     </div>
+                </div>
+                <div class="box-flex">
+                    <img src="https://i.pinimg.com/474x/c5/3b/fb/c53bfb7d13cfdc881353846e3cf8e6b9.jpg" alt="">
+                    <div class="food-name">
+                        <span>EXTRA CRISPY chicken coated in<br>a spicy, sweet, savoury garlic sauce</span>
+                     </div>
+                </div>
+            </div>
+            <a href="korean.html"><button type="button" class="korea" >See more</button></a>
+
+            <h1>Vietnamese/វៀតណាម​🫕Menu</h1>
+            <div class="flex-khmer">
+                <div class="box-flex">
+                    <img src="https://i.pinimg.com/236x/27/9d/af/279daf890e9cf1a6ce101b9eb6357cd8.jpg" alt="">
+                    <div class="food-name">
+                       <span>Kho/ខរសាច់ជ្រូក</span>
+                    </div>
+                </div>
+                <div class="box-flex">
+                    <img src="https://i.pinimg.com/236x/fa/b3/34/fab3340dbb93d798cde1ac9f55cb65be.jpg" alt="">
+                    <div class="food-name">
+                        <span>Bánh Khọt</span>
+                    </div>
+                </div>
+                <div class="box-flex">
+                    <img src="https://i.pinimg.com/236x/f6/2d/3f/f62d3f5ef00eb2e191ff764e6264ec22.jpg" alt="">
+                    <div class="food-name">
+                        <span>Vietnamese Rice Paper Rolls</span>
+                     </div>
+                </div>
+                <div class="box-flex">
+                    <img src="https://i.pinimg.com/236x/2c/87/ca/2c87caead4dbdd9281703f7bc6e4e141.jpg" alt="">
+                    <div class="food-name">
+                        <span>Banh Xeo</span>
+                     </div>
+                </div>
+                <div class="box-flex">
+                    <img src="https://i.pinimg.com/236x/35/3a/07/353a078d56ab404218a7974c2229ec38.jpg" alt="">
+                    <div class="food-name">
+                        <span>Mango salad/ ញ៉ោមស្វាយ</span>
+                     </div>
+                </div>
+                <div class="box-flex">
+                    <img src="https://i.pinimg.com/236x/1d/40/48/1d4048a3c4a12efca8bce04924a20c21.jpg" alt="">
+                    <div class="food-name">
+                        <span>Vietnamese Stir Fried <br> Macaroni with Beef</span>
+                     </div>
+                </div>
+                <div class="box-flex">
+                    <img src="https://i.pinimg.com/236x/c6/e8/68/c6e8682266df8b8777e5a2f60db32e50.jpg" alt="">
+                    <div class="food-name">
+                        <span> Bánh cuon /បាញ់ហយ </span>
+                     </div>
+                </div>
+                <div class="box-flex">
+                    <img src="https://i.pinimg.com/236x/be/ac/d3/beacd372969806fe313997a843bcb6ae.jpg" alt="">
+                    <div class="food-name">
+                        <span>Canh Chua/ម្ជូយួន</span>
+                     </div>
+                </div>
+            </div>
+            <a href="vietnam.html"><button type="button" class="vietnamese" >See more</button></a>
+
+            <h1>Europe🍔Menu</h1>
+            <div class="flex-khmer">
+                <div class="box-flex">
+                    <img src="https://i.pinimg.com/236x/af/cb/f1/afcbf1395681634713e7d8c3f7bd6eff.jpg" alt="">
+                    <div class="food-name">
+                       <span>Keto french fries</span>
+                    </div>
+                </div>
+                <div class="box-flex">
+                    <img src="https://i.pinimg.com/236x/2d/27/b9/2d27b9ed87b1327405675a9b2438172b.jpg" alt="">
+                    <div class="food-name">
+                        <span>Currywurst</span>
+                    </div>
+                </div>
+                <div class="box-flex">
+                    <img src="https://i.pinimg.com/236x/39/58/4f/39584fc58fb0a3f801047b25768f5abd.jpg" alt="">
+                    <div class="food-name">
+                        <span>Tender  chocolate  bread</span>
+                     </div>
+                </div>
+                <div class="box-flex">
+                    <img src="https://i.pinimg.com/236x/eb/59/79/eb5979aa27e918a71624622e0e25b350.jpg" alt="">
+                    <div class="food-name">
+                        <span>Flag cake</span>
+                     </div>
+                </div>
+                <div class="box-flex">
+                    <img src="https://i.pinimg.com/236x/0a/27/ac/0a27acd372042e6642ea996214fb1ed8.jpg" alt="">
+                    <div class="food-name">
+                        <span>Cake with Fruit & Cream</span>
+                     </div>
+                </div>
+                <div class="box-flex">
+                    <img src="https://i.pinimg.com/236x/43/7b/14/437b143ff963555ae0f88fd455b2fe87.jpg" alt="">
+                    <div class="food-name">
+                        <span>Crockpot Creamy Chicken Nacho</span>
+                     </div>
+                </div>
+                <div class="box-flex">
+                    <img src="https://i.pinimg.com/236x/34/f4/8f/34f48f5c56c938642b80b0555e5adf82.jpg" alt="">
+                    <div class="food-name">
+                        <span>PIZZA</span>
+                     </div>
+                </div>
+                <div class="box-flex">
+                    <img src="https://i.pinimg.com/236x/d5/d4/bb/d5d4bb7e8a83e3cc20f3383e4ca3e5c7.jpg" alt="">
+                    <div class="food-name">
+                        <span>Hamburger</span>
+                     </div>
+                </div>
+            </div>
+            <a href="europe.html"><button type="button" class="europe" >See more</button></a>
+
+            <h1>Health❤️ food</h1>
+            <div class="flex-khmer">
+                <div class="box-flex">
+                    <img src="https://i.pinimg.com/236x/ea/ee/b2/eaeeb2156f05a8b26c630234de2b82ef.jpg" alt="">
+                    <div class="food-name">
+                       <span>Delicious steak and salad dinner recipe </span>
+                    </div>
+                </div>
+                <div class="box-flex">
+                    <img src="https://i.pinimg.com/236x/6e/47/a9/6e47a9a9364a8f9e6c9f1f03fa6e4218.jpg" alt="">
+                    <div class="food-name">
+                        <span>Crisp greens and creamy hummus</span>
+                    </div>
+                </div>
+                <div class="box-flex">
+                    <img src="https://i.pinimg.com/236x/09/30/29/0930292b78d7ef1b91a90b29fee59a84.jpg" alt="">
+                    <div class="food-name">
+                        <span>Corn Tomato Avocado Salad</span>
+                     </div>
+                </div>
+                <div class="box-flex">
+                    <img src="https://i.pinimg.com/474x/90/9b/4c/909b4c440c19e14bfcf5932564de0a65.jpg" alt="">
+                    <div class="food-name">
+                        <span>Courgette, Pea & Feta Fritters</span>
+                     </div>
+                </div>
+                <div class="box-flex">
+                    <img src="https://i.pinimg.com/236x/34/54/c2/3454c23fd8e7aa4bc948e170e8c7c4b7.jpg" alt="">
+                    <div class="food-name">
+                        <span>Grilled Halloumi Salad</span>
+                     </div>
+                </div>
+                <div class="box-flex">
+                    <img src="https://i.pinimg.com/236x/32/ed/b1/32edb15b4f702f7b4bedd67875e731b0.jpg" alt="">
+                    <div class="food-name">
+                        <span>Crispy chicken salad </span>
+                     </div>
+                </div>
+                <div class="box-flex">
+                    <img src="https://i.pinimg.com/474x/11/05/df/1105dfa5a10d4a63833f2c1e4151a58f.jpg" alt="">
+                    <div class="food-name">
+                        <span>Garlic Grilled and Herb  Chicken and Veggie</span>
+                     </div>
+                </div>
+                <div class="box-flex">
+                    <img src="https://i.pinimg.com/236x/44/33/16/4433163ba8e12acacfaced4d031a4b0d.jpg" alt="">
+                    <div class="food-name">
+                        <span>Cabbage salad</span>
+                     </div>
+                </div>
+            </div>
+            <a href="health-food.html"><button type="button" class="europe" >See more</button></a>
+        
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-logo">
+            <img src="https://i.pinimg.com/736x/95/ad/96/95ad96dc216687ccc9fe88110716ad01.jpg" alt="">
+        </div>
+        <div class="location">
+            <h1>!Location</h1>
+            <div class="about">
+                <a href="#"><i class="fa-solid fa-location-dot"></i> Saang Kandal,Phnom Penh,Cambodia</a> <br>
+                <a href="#"><i class="fa-brands fa-telegram"></i> +855 16 559 131</a>
+            </div>
+        </div>
+        <div class="follow">
+            <h2>Follow ME</h2>
+            <div class="label">
+                <a href="#" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/768px-Facebook_Logo_%282019%29.png" alt=""></a>
+                <a href="#" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt=""></a>
+                <a href="#" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png" alt=""></a>
+            </div> <br><br>
+            <h6>Coding by Lika</h6>
+        </div>
+    </footer>
+</body>
+<script src="app.js"></script>
+</html>

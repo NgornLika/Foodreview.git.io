@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mango-salad</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="ingredient.css">
+    <link rel="stortcut icon " href="https://i.pinimg.com/736x/c4/c9/8a/c4c98a02ddf96fb83b6db6fc3319158e.jpg">
+<body>
+    <div class="container">
+        
+        <div class="box-left">
+            <div class="big-screen">
+            <img src="https://i.pinimg.com/736x/b5/26/72/b52672ad7cd5e8f8382a0d8d78ebf41b.jpg" alt="">
+            </div>
+            <div class="slides">
+                <img src="https://i.pinimg.com/736x/b5/26/72/b52672ad7cd5e8f8382a0d8d78ebf41b.jpg" alt="">
+                <img src="https://i.pinimg.com/736x/47/9e/4d/479e4d551e3969091f230c9c1e8d485a.jpg" alt="">
+                <img src="https://i.pinimg.com/736x/ae/e4/5a/aee45a930989c1804c4a014859dc4521.jpg" alt="">
+                <img src="https://i.pinimg.com/736x/0e/3f/dd/0e3fdd79feecfef2d40922b03a5942b7.jpg" alt="">
+                <img src="https://i.pinimg.com/736x/e2/68/b0/e268b0536ebf694a827b2ae1c2df3a48.jpg" alt="">
+            </div>        
+        </div>
+        <div class="box-right">
+            <div class="head">
+                <h1>Mango salad/ ញ៉ោមស្វាយ  </h1>
+            </div>
+            <div class="ingred">
+                <div class="box-eng">
+                    <h2>Ingredients</h2>
+                    <p>
+                        Produce <br>
+                        • 1 cup Cilantro, leaves <br>
+                        • 1/2 cup Green onion <br>
+                        • 2 Mangoes, ripe (or green) <br>
+                        • 1/4 cup Mint, leaves <br>
+                        • 1/4 cup Peanuts, roasted <br>
+                        • 1 Red bell pepper <br>
+                        • 1/2 Red onion <br>
+                        • 1/2 Thai chilli, red <br>
+                        Condiments <br>
+                        • 2 1/2 tbsp Lime juice <br>
+                        • 1/2 tbsp Maple syrup <br>
+                        • 1 1/2 tbsp Tamari <br>
+                        Oils & Vinegars <br>
+                        • 1/2 tbsp Rice vinegar <br>
+                    </p>
+                </div>
+                <div class="box-khmer">
+                    <h2>គ្រឿងផ្សំ</h2>
+                    <p>
+                        ផលិត <br>
+                        • Cilantro 1 ពែង <br>
+                        • ស្វាយទុំ ២ផ្លែ (ឬបៃតង)<br>
+                        • 1/4 ពែង Mint, ស្លឹក<br>
+                        • សណ្តែកដីលីង 1/4 ពែង<br>
+                        • ម្រេចកណ្ដឹងក្រហម ១<br>
+                        • 1/2 ខ្ទឹមបារាំងក្រហម<br>
+                        • 1/2 ម្រេចក្រហមថៃ <br>
+                        គ្រឿងទេស<br>
+                        • ទឹកក្រូចឆ្មា 2 1/2 tbsp<br>
+                        • 1/2 tsp Maple Syrup<br>
+                        • 1 1/2 tbsp Tamari<br>
+                        ប្រេងនិងទឹកខ្មេះ<br>
+                        • ទឹកខ្មេះអង្ករ 1/2 ស្លាបព្រាកាហ្វេ<br>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script charset="utf-8">
+    $(document).ready(function(){
+        $('.box-left .slides > img').click(function(){
+        var $smallImages = $(this).attr('src');
+        $('.box-left .big-screen > img').attr('src', $smallImages);
+        });
+    });
+</script>
+</html>
